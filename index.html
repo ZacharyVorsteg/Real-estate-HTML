@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palm Beach Industrial Warehouses - Premium Spaces Available</title>
+  <meta name="description" content="Discover prime industrial warehouse spaces in Palm Beach. From 1,000 to 50,000+ sq ft. Expert guidance, immediate availability. Call (561) 556-0438">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@700;900&display=swap" rel="stylesheet">
+  
+  <style>
+    /* --------- GLOBAL STYLES --------- */
+    :root {
+      --navy: #1a365d;
+      --blue: #2b6cb0;
+      --teal: #319795;
+      --success: #38a169;
+      --gray: #f7fafc;
+      --white: #ffffff;
+      --text-primary: #2d3748;
+      --text-secondary: #4a5568;
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.12);
+      --shadow-xl: 0 20px 25px rgba(0,0,0,0.15);
+      --primary-font: 'Inter', sans-serif;
+      --headline-font: 'Space Grotesk', sans-serif;
+      --gradient-hero: linear-gradient(135deg, #1a365d, #2b6cb0);
+      --gradient-cta: linear-gradient(120deg, #2b6cb0, #319795);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--primary-font);
+      color: var(--text-primary);
+      background: var(--gray);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--blue);
+      transition: color 0.2s ease;
+    }
+    a:hover {
+      color: var(--teal);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* --------- ANIMATIONS --------- */
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(49, 151, 149, 0.4); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(49, 151, 149, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(49, 151, 149, 0); }
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: rotate(0deg); }
+      10% { transform: rotate(-5deg); }
+      20% { transform: rotate(5deg); }
+      30% { transform: rotate(-5deg); }
+      40% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes subtlePulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 3px 15px rgba(49,151,149,0.3);
+      }
+    }
+
+    /* --------- HEADER --------- */
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .logo {
+      font-family: var(--headline-font);
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--navy);
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      color: var(--teal);
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    .nav-links a {
+      font-weight: 600;
+      color: var(--text-primary);
+      position: relative;
+      padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--teal);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    .nav-cta {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    .phone-number {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--teal);
+      transition: transform 0.2s ease;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .phone-number:hover {
+      transform: scale(1.05);
+    }
+    .nav-button {
+      background: var(--gradient-cta);
+      color: #fff;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      font-weight: 700;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .nav-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      color: #fff;
+    }
+
+    /* Mobile Menu Toggle */
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--navy);
+    }
+
+    /* Mobile Menu Overlay */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      z-index: 9999;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .mobile-menu.active {
+      display: block;
+      opacity: 1;
+    }
+    .mobile-menu-content {
+      background: var(--white);
+      width: 85%;
+      max-width: 350px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 2rem;
+      box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+    .mobile-menu.active .mobile-menu-content {
+      transform: translateX(0);
+    }
+    .mobile-menu-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--navy);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: all 0.2s ease;
+    }
+    .mobile-menu-close:hover {
+      background: var(--gray);
+    }
+    .mobile-menu-links {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .mobile-menu-links a {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy);
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .mobile-menu-links a:hover {
+      color: var(--teal);
+      padding-left: 0.5rem;
+    }
+    .mobile-menu-phone {
+      color: var(--teal) !important;
+      font-weight: 700;
+    }
+    .mobile-menu-cta {
+      background: var(--gradient-cta);
+      color: #fff !important;
+      text-align: center;
+      padding: 1rem !important;
+      border-radius: 5px;
+      border: none !important;
+      margin-top: 1rem;
+    }
+    .mobile-menu-cta:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* --------- HERO --------- */
+    .hero {
+      background: var(--gradient-hero);
+      color: #fff;
+      padding: 7rem 0 4rem;
+      margin-top: 4.5rem;
+    }
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-family: var(--headline-font);
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      animation: slideIn 0.6s ease-out;
+    }
+    .hero-text .highlight {
+      color: var(--teal);
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      opacity: 0.95;
+      animation: slideIn 0.8s ease-out;
+    }
+    .hero-features {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      animation: slideIn 1s ease-out;
+    }
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      font-size: 1.07rem;
+    }
+    .hero-feature::before {
+      content: "✓";
+      color: var(--success);
+      font-weight: bold;
+      margin-right: 0.3em;
+    }
+
+    /* --------- CONTACT FORM --------- */
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: var(--shadow-lg);
+      animation: slideIn 1.2s ease-out;
+    }
+    .form-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .form-header h2 {
+      font-family: var(--headline-font);
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .form-subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: var(--primary-font);
+      transition: all 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(49,151,149,0.1);
+      transform: translateY(-1px);
+    }
+    .submit-button {
+      background: var(--gradient-cta);
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      font-weight: 800;
+      font-size: 1.05rem;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .submit-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    .submit-button:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+    .submit-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .submit-button:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .form-disclaimer {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .form-disclaimer strong {
+      color: var(--teal);
+      font-size: 1rem;
+    }
+
+    /* --------- PROPERTIES --------- */
+    .properties {
+      background: var(--gray);
+      padding: 5rem 0;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .section-header h2 {
+      font-family: var(--headline-font);
+      font-size: 2.4rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .section-header p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+    .properties-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    .property-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .property-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+    .property-image {
+      height: 220px;
+      background: #e2e8f0;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-color: #e2e8f0;
+      overflow: hidden;
+    }
+    /* Fallback pattern when no image */
+    .property-image:not([style*="background-image"]) {
+      background-image:
+        linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0),
+        linear-gradient(45deg, #e2e8f0 25%, transparent 25%, transparent 75%, #e2e8f0 75%, #e2e8f0);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+    }
+    .property-image::after {
+      content: '🏢 Industrial Space';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #cbd5e0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: center;
+      opacity: 0.5;
+    }
+    .property-image[style*="background-image"]::after {
+      display: none;
+    }
+    .property-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--teal);
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      animation: pulse 2s infinite;
+    }
+    .availability-badge {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(43, 108, 176, 0.95);
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      animation: slideIn 0.5s ease-out;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: 0.3px;
+    }
+    .availability-badge::before {
+      content: '✓';
+      font-size: 0.9rem;
+      font-weight: 900;
+      background: rgba(255,255,255,0.2);
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .availability-badge.urgent {
+      background: rgba(49, 151, 149, 0.95);
+      animation: slideIn 0.5s ease-out, subtlePulse 3s infinite;
+    }
+    .property-details {
+      padding: 1.5rem;
+    }
+    .property-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+    .property-location {
+      color: var(--text-secondary);
+      margin-bottom: 0.8rem;
+    }
+    .property-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .spec-label {
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .spec-value {
+      color: var(--text-secondary);
+    }
+    .property-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .feature-tag {
+      background: #f7fafc;
+      color: var(--text-primary);
+      padding: 0.25rem 0.6rem;
+      font-size: 0.88rem;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+    .property-cta {
+      display: flex;
+      gap: 1rem;
+    }
+    .property-button {
+      flex: 1;
+      text-align: center;
+      font-weight: 700;
+      padding: 0.7rem 0;
+      border-radius: 5px;
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .property-button.primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .property-button.primary:hover {
+      background: var(--teal);
+      color: #fff;
+      animation: shake 0.5s ease-in-out;
+    }
+    .property-button.secondary {
+      background: transparent;
+      border: 2px solid var(--blue);
+      color: var(--blue);
+    }
+    .property-button.secondary:hover {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    /* --------- BENEFITS --------- */
+    .benefits {
+      padding: 4rem 0;
+      background: #fff;
+    }
+    .benefits-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    }
+    .benefit-card {
+      text-align: center;
+      padding: 1rem 0;
+      transition: transform 0.3s ease;
+    }
+    .benefit-card:hover {
+      transform: translateY(-5px);
+    }
+    .benefit-icon {
+      background: #e6f2ff;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      transition: all 0.3s ease;
+    }
+    .benefit-card:hover .benefit-icon {
+      background: var(--gradient-cta);
+      transform: scale(1.1);
+    }
+    .benefit-card h3 {
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .benefit-card p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    /* --------- CTA SECTION --------- */
+    .cta-section {
+      background: var(--gradient-cta);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    .cta-content h2 {
+      font-family: var(--headline-font);
+      font-size: 2.4rem;
+      margin-bottom: 0.8rem;
+      font-weight: 800;
+    }
+    .cta-phone {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #fff;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+    .cta-phone:hover {
+      color: #fff;
+      transform: scale(1.1);
+      background: rgba(255,255,255,0.2);
+    }
+    .cta-subtext {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-top: 0.5rem;
+    }
+
+    /* --------- BLOG SECTION --------- */
+    .blog-section {
+      padding: 4rem 0;
+      background: #f7fafc;
+    }
+    .blog-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-card.expanded {
+      grid-column: 1 / -1;
+      max-width: 800px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .blog-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-cta);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .blog-card:hover::before {
+      transform: scaleX(1);
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+    .blog-category {
+      background: var(--blue);
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h3 {
+      font-size: 1.2rem;
+      color: var(--navy);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+    }
+    .blog-excerpt {
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+    .blog-meta {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-bottom: 0.5rem;
+    }
+    .blog-link {
+      color: var(--teal);
+      font-weight: 700;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .blog-link::after {
+      content: '→';
+      transition: transform 0.2s;
+    }
+    .blog-link:hover {
+      color: var(--blue);
+      gap: 0.5rem;
+    }
+    .blog-link:hover::after {
+      transform: translateX(3px);
+    }
+
+    /* Expanded blog content */
+    .blog-full-content {
+      display: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+      animation: slideIn 0.3s ease-out;
+    }
+    .blog-card.expanded .blog-full-content {
+      display: block;
+    }
+    .blog-card.expanded .blog-excerpt {
+      display: none;
+    }
+    .blog-card.expanded .blog-link {
+      display: none;
+    }
+    .blog-full-content p {
+      color: var(--text-primary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .blog-full-content h3 {
+      font-size: 1.3rem;
+      color: var(--navy);
+      margin: 2rem 0 1rem;
+      font-weight: 700;
+    }
+    .blog-close {
+      display: none;
+      color: var(--teal);
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .blog-card.expanded .blog-close {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .blog-close::before {
+      content: '←';
+      transition: transform 0.2s;
+    }
+    .blog-close:hover {
+      color: var(--blue);
+    }
+    .blog-close:hover::before {
+      transform: translateX(-3px);
+    }
+
+    .blog-cta {
+      background: var(--gradient-hero);
+      color: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .newsletter-form {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .newsletter-form input {
+      flex: 1;
+      padding: 1rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .newsletter-form button {
+      background: var(--teal);
+      color: #fff;
+      font-weight: 700;
+      border: none;
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .newsletter-form button:hover {
+      background: var(--success);
+      transform: translateY(-2px);
+    }
+
+    /* --------- FAQ SECTION --------- */
+    .faq-section {
+      background: #f7fafc;
+      padding: 4rem 0;
+    }
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow-md);
+      margin-bottom: 1rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .faq-item:hover {
+      box-shadow: var(--shadow-lg);
+    }
+    .faq-question {
+      padding: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s;
+    }
+    .faq-question:hover {
+      background: #f7fafc;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0 1.2rem 1rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .faq-icon {
+      transition: transform 0.3s;
+      color: var(--teal);
+    }
+
+    /* --------- ABOUT SECTION --------- */
+    .about-section {
+      background: #fff;
+      padding: 4rem 0;
+    }
+    .about-content {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1.5fr 1fr;
+      align-items: start;
+    }
+    .about-text h3 {
+      font-family: var(--headline-font);
+      font-size: 1.8rem;
+      color: var(--navy);
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+    .about-lead {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .about-text p {
+      color: var(--text-primary);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    .about-text ul li {
+      color: var(--text-primary);
+      line-height: 1.8;
+    }
+    .about-cta-box {
+      background: linear-gradient(135deg, #f7fafc, #e6f2ff);
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      position: sticky;
+      top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-cta-box h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .about-cta-box p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-phone {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin: 0.5rem 0 0.5rem;
+      transition: all 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+    }
+    .about-phone:hover {
+      transform: scale(1.1);
+      background: var(--teal);
+      color: #fff;
+    }
+    .about-availability {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .about-features {
+      text-align: left;
+      margin-bottom: 1rem;
+      width: 100%;
+      max-width: 250px;
+    }
+    .about-feature {
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .about-cta-box .submit-button {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    /* --------- FOOTER --------- */
+    footer {
+      background: var(--navy);
+      color: #fff;
+      padding: 3rem 0 2rem;
+      text-align: center;
+      position: relative;
+    }
+    .footer-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-links a {
+      color: #fff;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+    }
+    .footer-links a:hover {
+      opacity: 1;
+      color: var(--teal);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 2rem;
+      padding-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    /* Terms & Privacy Dropdown */
+    .terms-dropdown {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(10px);
+      max-height: 70vh;
+      overflow-y: auto;
+      z-index: 1000;
+      animation: slideUp 0.3s ease-out;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .terms-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      color: #fff;
+    }
+    .terms-content h4 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--teal);
+    }
+    .terms-section {
+      margin-bottom: 2rem;
+    }
+    .terms-section h5 {
+      font-size: 1.2rem;
+      margin-bottom: 0.8rem;
+      color: #fff;
+    }
+    .terms-section p {
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    .terms-section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .terms-section ul li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    .terms-section ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+    }
+    .terms-close {
+      background: var(--teal);
+      color: #fff;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 1rem;
+    }
+    .terms-close:hover {
+      background: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    /* --------- FLOATING CTA --------- */
+    .floating-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--gradient-cta);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      font-weight: 700;
+      transition: all 0.3s ease;
+      z-index: 998;
+      animation: pulse 2s infinite;
+    }
+    .floating-cta:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    /* --------- RIPPLE EFFECT --------- */
+    .ripple {
+      position: absolute;
+      background: rgba(255,255,255,0.3);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: rippleEffect 0.6s ease-out;
+    }
+    @keyframes rippleEffect {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+
+    /* --------- RESPONSIVE --------- */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-toggle {
+        display: block;
+      }
+      .nav-cta {
+        gap: 0.8rem;
+      }
+      .phone-number {
+        font-size: 0.95rem;
+      }
+      .nav-button {
+        display: none; /* Hide on mobile to save space */
+      }
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .properties-grid {
+        grid-template-columns: 1fr;
+      }
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      .about-cta-box {
+        position: static;
+        margin-top: 2rem;
+      }
+      .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="container">
+      <div class="logo">INDUSTRIAL<span>SPACE</span></div>
+      <div class="nav-links">
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+15615560438" class="phone-number">📞 561-556-0438</a>
+        <a href="#propertyForm" class="nav-button">Get Available Properties</a>
+      </div>
+      <button class="mobile-menu-toggle">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Premium <span class="highlight">Industrial Spaces</span> in Palm Beach County</h1>
+          <p class="hero-subtitle">From startup-friendly units to enterprise warehouses. Expert guidance, immediate availability.</p>
+          <div class="hero-features">
+            <div class="hero-feature">Spaces from 1,000 - 50,000+ sq ft</div>
+            <div class="hero-feature">Move-in ready facilities</div>
+            <div class="hero-feature">Flexible lease terms</div>
+          </div>
+        </div>
+        
+        <!-- MAIN CONTACT FORM -->
+        <div class="contact-form" id="propertyForm">
+          <div class="form-header">
+            <h2>Schedule Your Tour</h2>
+            <p class="form-subtitle">Get exclusive access to pre-market deals</p>
+          </div>
+          
+          <!-- FIXED NETLIFY FORM -->
+          <form id="propertyInquiry" 
+                name="propertyInquiry" 
+                method="POST" 
+                data-netlify="true"
+                netlify-honeypot="bot-field">
+            
+            <!-- Hidden fields for Netlify -->
+            <input type="hidden" name="form-name" value="propertyInquiry">
+            <div style="display:none">
+              <label>Don't fill this out: <input name="bot-field"></label>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            
+            <div class="form-group">
+              <select id="spaceSize" name="spaceSize" required>
+                <option value="">Select Space Size Needed</option>
+                <option value="1000-2500">1,000 - 2,500 sq ft</option>
+                <option value="2500-5000">2,500 - 5,000 sq ft</option>
+                <option value="5000-10000">5,000 - 10,000 sq ft</option>
+                <option value="10000+">10,000+ sq ft</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" rows="4" 
+                        placeholder="Tell us about your business needs (optional)"></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">
+              GET PROPERTY LIST & SCHEDULE TOUR →
+            </button>
+          </form>
+          
+          <div class="form-disclaimer">
+            <strong>🔒 Your information is secure</strong><br>
+            Immediate response within business hours
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES SECTION -->
+  <section class="properties" id="properties">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Industrial Properties</h2>
+        <p>Prime locations with immediate availability</p>
+      </div>
+      
+      <div class="properties-grid">
+        <!-- Property 1 -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property1.jpg');">
+            <div class="property-badge">FOR LEASE</div>
+            <div class="availability-badge">✓ Available Now</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Small Bay Warehouse</h3>
+            <p class="property-location">📍 Near I-95 & Belvedere</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">1,250 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">16'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Monthly Rent:</span> <span class="spec-value">$2,395.83</span></div>
+              <div><span class="spec-label">Rate PSF:</span> <span class="spec-value">$23.00/year</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">10×12 Roll-up Door</span>
+              <span class="feature-tag">Concrete Building</span>
+              <span class="feature-tag">Restroom</span>
+              <span class="feature-tag">Industrial Gross</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call Now</a>
+              <a href="#propertyForm" class="property-button secondary">Schedule Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property2.jpg');">
+            <div class="property-badge">LAND</div>
+            <div class="availability-badge">✓ Immediate Occupancy</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Agricultural Land</h3>
+            <p class="property-location">📍 West Palm Beach</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">0.5 Acres</span></div>
+              <div><span class="spec-label">Type:</span> <span class="spec-value">Raw Land</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Security:</span> <span class="spec-value">24/7 Cameras</span></div>
+              <div><span class="spec-label">Management:</span> <span class="spec-value">On-Site</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">Private</span>
+              <span class="feature-tag">Filled Land</span>
+              <span class="feature-tag">Gated Access</span>
+              <span class="feature-tag">Camera Surveillance</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call for Details</a>
+              <a href="#propertyForm" class="property-button secondary">Get Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property3.jpg');">
+            <div class="property-badge">CORNER UNIT</div>
+            <div class="availability-badge">✓ Ready Today</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Prime Corner Warehouse</h3>
+            <p class="property-location">📍 7233 Southern Blvd, Units B4 & B5</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">3,600 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">16'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Monthly Rent:</span> <span class="spec-value">$7,050.00</span></div>
+              <div><span class="spec-label">Rate PSF:</span> <span class="spec-value">$23.50/year</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">200 SF A/C Office</span>
+              <span class="feature-tag">(2) 10×12 Doors</span>
+              <span class="feature-tag">Grade Level</span>
+              <span class="feature-tag">Near Turnpike</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call Now</a>
+              <a href="#propertyForm" class="property-button secondary">Schedule Tour</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS SECTION -->
+  <section class="benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2>Why Choose Our Industrial Spaces</h2>
+        <p>Comprehensive solutions for your business growth</p>
+      </div>
+      
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">🚚</div>
+          <h3>Strategic Locations</h3>
+          <p>Direct access to major highways and transportation corridors</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3>Flexible Options</h3>
+          <p>Scalable spaces that grow with your business needs</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🔧</div>
+          <h3>Move-In Ready</h3>
+          <p>Modern facilities with all essential infrastructure in place</p>
+        </div>
+        
+        <div class="benefit-card">
+          <div class="benefit-icon">🤝</div>
+          <h3>Expert Support</h3>
+          <p>Dedicated team to help you find the perfect space</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Find Your Perfect Industrial Space?</h2>
+        <a href="tel:+15615560438" class="cta-phone">(561) 556-0438</a>
+        <p class="cta-subtext">Call now for immediate availability • Expert guidance • Best rates</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION -->
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Industrial Real Estate Insights</h2>
+        <p>Stay informed about the Palm Beach market</p>
+      </div>
+      
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <div class="blog-card" id="blog-quantum">
+          <span class="blog-category">TECHNOLOGY & INNOVATION</span>
+          <h3>Quantum Computing Revolution: West Palm Beach Emerges as Tech Hub</h3>
+          <p class="blog-excerpt">
+            West Palm Beach is positioning itself as a major player in the quantum computing revolution, attracting tech talent and innovative companies...
+          </p>
+          <p class="blog-meta">January 15, 2025 • 5 min read</p>
+          <a href="#" class="blog-link">Read Full Analysis</a>
+          
+          <div class="blog-full-content">
+            <p>West Palm Beach is rapidly transforming into a significant technology hub, with quantum computing development at the forefront of this evolution. The city's strategic location, growing tech infrastructure, and business-friendly environment are attracting cutting-edge companies and top talent in the quantum computing field.</p>
+            
+            <h3>The Quantum Opportunity</h3>
+            <p>Quantum computing represents one of the most transformative technologies of our time, with potential applications in drug discovery, financial modeling, cryptography, and artificial intelligence. As major tech companies and startups race to achieve quantum advantage, West Palm Beach is positioning itself as an attractive destination for this emerging industry.</p>
+            
+            <h3>Why West Palm Beach?</h3>
+            <p>Several factors make West Palm Beach ideal for quantum computing development: Florida's favorable tax structure with no state income tax, proximity to major universities and research institutions, growing pool of tech talent relocating from traditional tech hubs, and available industrial and flex spaces suitable for quantum research facilities. The area's quality of life and year-round sunshine also help attract and retain top researchers and engineers.</p>
+            
+            <h3>Infrastructure for Innovation</h3>
+            <p>The quantum computing industry requires specialized facilities with precise environmental controls, significant power capacity, and advanced cooling systems. West Palm Beach's industrial real estate market offers properties that can be adapted for these unique requirements, with many warehouses featuring high ceilings and robust electrical infrastructure that can support quantum computing labs.</p>
+            
+            <h3>Economic Impact</h3>
+            <p>The development of a quantum computing cluster in West Palm Beach could create thousands of high-paying jobs and attract billions in investment. Tech workers in quantum computing fields command salaries well above regional averages, contributing to economic growth and increased demand for both commercial and residential real estate.</p>
+            
+            <h3>Looking Ahead</h3>
+            <p>As quantum computing moves from research labs to commercial applications, West Palm Beach is well-positioned to capture a significant share of this emerging market. Industrial property owners and developers are already adapting spaces to meet the unique needs of quantum tech companies. For businesses seeking to establish quantum computing operations, now is the time to secure strategic locations in West Palm Beach.</p>
+            
+            <p>Contact us at (561) 556-0438 to explore industrial properties suitable for quantum computing and high-tech operations.</p>
+            
+            <span class="blog-close">Close Article</span>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card" id="blog-market">
+          <span class="blog-category">LOCATION GUIDE</span>
+          <h3>Top 5 Industrial Zones in Palm Beach County</h3>
+          <p class="blog-excerpt">
+            A comprehensive guide to the best industrial areas for logistics, manufacturing, and distribution operations...
+          </p>
+          <p class="blog-meta">January 10, 2025 • 4 min read</p>
+          <a href="#" class="blog-link">View Checklist</a>
+          
+          <div class="blog-full-content">
+            <p>Choosing the right location for your industrial operation can make or break your business efficiency. Here's our expert guide to Palm Beach County's top industrial zones.</p>
+            
+            <h3>1. West Palm Beach Industrial District</h3>
+            <p>The largest concentration of industrial space in the county, offering excellent highway access and a skilled workforce. Best for: distribution centers, light manufacturing.</p>
+            
+            <h3>2. Boynton Beach Commerce Park</h3>
+            <p>Modern facilities with flexible zoning. Ideal for businesses needing both warehouse and showroom space. Best for: wholesale operations, flex users.</p>
+            
+            <h3>3. Lake Worth Corridor</h3>
+            <p>Affordable options with good transportation links. Growing area with new developments. Best for: startups, small to medium operations.</p>
+            
+            <h3>4. Jupiter Commerce Park</h3>
+            <p>Premium location serving northern county. Limited availability but excellent demographics. Best for: high-value goods, specialty operations.</p>
+            
+            <h3>5. Boca Raton Industrial Zone</h3>
+            <p>Tech-friendly area with modern amenities. Higher costs but superior infrastructure. Best for: tech companies, R&D facilities.</p>
+            
+            <p>Need help choosing the right location? Our team provides free site selection consulting. Call (561) 556-0438 to discuss your requirements.</p>
+            
+            <span class="blog-close">Close Article</span>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card" id="blog-guide">
+          <span class="blog-category">TENANT GUIDE</span>
+          <h3>First-Time Industrial Tenant? Complete Checklist</h3>
+          <p class="blog-excerpt">
+            Everything you need to know before signing your first industrial lease, from space requirements to hidden costs...
+          </p>
+          <p class="blog-meta">January 8, 2025 • 6 min read</p>
+          <a href="#" class="blog-link">Explore Tech Growth</a>
+          
+          <div class="blog-full-content">
+            <p>Leasing industrial space for the first time can be overwhelming. This comprehensive checklist will help you navigate the process with confidence.</p>
+            
+            <h3>Space Requirements Checklist</h3>
+            <p>✓ Calculate actual square footage needs (don't forget growth projections)<br>
+            ✓ Determine ceiling height requirements<br>
+            ✓ Assess loading dock needs<br>
+            ✓ Evaluate power requirements<br>
+            ✓ Consider office space ratio</p>
+            
+            <h3>Location Factors</h3>
+            <p>✓ Proximity to highways and customers<br>
+            ✓ Labor pool availability<br>
+            ✓ Zoning compatibility<br>
+            ✓ Truck access and turning radius<br>
+            ✓ Parking requirements</p>
+            
+            <h3>Lease Terms to Negotiate</h3>
+            <p>✓ Base rent and annual escalations<br>
+            ✓ CAM charges and what's included<br>
+            ✓ Improvement allowances<br>
+            ✓ Renewal options and expansion rights<br>
+            ✓ Sublease and assignment rights</p>
+            
+            <h3>Hidden Costs to Consider</h3>
+            <p>Many first-time tenants are surprised by: property taxes, insurance requirements, utility deposits, maintenance responsibilities, and moving/setup costs. Budget an additional 15-20% above base rent for these expenses.</p>
+            
+            <p>Get our complete 50-point industrial tenant checklist by calling (561) 556-0438. We'll also provide a free lease review to ensure you're getting fair terms.</p>
+            
+            <span class="blog-close">Close Article</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Newsletter CTA -->
+      <div class="blog-cta">
+        <h3>Stay Ahead of the Market</h3>
+        <p>Get exclusive industrial real estate insights delivered to your inbox</p>
+        
+        <!-- FIXED NEWSLETTER FORM -->
+        <form class="newsletter-form" 
+              name="newsletter" 
+              method="POST" 
+              data-netlify="true"
+              netlify-honeypot="bot-field">
+          
+          <!-- Hidden fields for Netlify -->
+          <input type="hidden" name="form-name" value="newsletter">
+          <div style="display:none">
+            <label>Don't fill this out: <input name="bot-field"></label>
+          </div>
+          
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common industrial leasing questions</p>
+      </div>
+      
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            What are the current warehouse rental rates in West Palm Beach?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Current warehouse rental rates in West Palm Beach range from $10-16 per square foot annually, depending on location, amenities, and lease terms. Premium locations near major highways command higher rates. Contact us for specific pricing on available properties.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            What size spaces are available?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            We have industrial spaces ranging from 1,000 sq ft for small operations up to 50,000+ sq ft for large distribution centers. Many properties offer divisible space, allowing you to lease exactly what you need. We also help businesses plan for future expansion.
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            How quickly can I move in?
+            <span class="faq-icon">▼</span>
+          </div>
+          <div class="faq-answer">
+            Most of our featured properties are move-in ready within 30-60 days. The timeline depends on lease negotiations, any required improvements, and permit requirements. We work closely with property owners to expedite the process for qualified tenants.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Palm Beach Warehouses</h2>
+        <p>Your resource for industrial and warehouse space in Palm Beach County</p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Industrial Real Estate in Palm Beach County</h3>
+          <p class="about-lead">
+            Palm Beach Warehouses connects businesses with available industrial, warehouse, and flex spaces throughout Palm Beach County. We provide comprehensive property listings and direct access to property owners and managers.
+          </p>
+          
+          <p>Whether you're a small business looking for your first warehouse space or an established company seeking to expand operations, our platform helps you find and compare available properties in key industrial areas including West Palm Beach, Boynton Beach, Lake Worth, and surrounding communities.</p>
+          
+          <h3>What We Offer</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 0.8rem;">✓ <strong>Current Listings:</strong> Up-to-date availability of warehouse and industrial spaces</li>
+            <li style="margin-bottom: 0.8rem;">✓ <strong>Direct Contact:</strong> Connect directly with property representatives</li>
+            <li style="margin-bottom: 0.8rem;">✓ <strong>Property Details:</strong> Clear information on sizes, features, and pricing</li>
+            <li style="margin-bottom: 0.8rem;">✓ <strong>Local Focus:</strong> Exclusively focused on Palm Beach County properties</li>
+          </ul>
+          
+          <h3>Palm Beach County Industrial Market</h3>
+          <p>Palm Beach County offers diverse industrial real estate options, from small flex spaces perfect for startups to large distribution centers for major operations. The area benefits from:</p>
+          <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+            <li style="margin-bottom: 0.5rem;">• Strategic location with access to major highways (I-95, Florida Turnpike)</li>
+            <li style="margin-bottom: 0.5rem;">• Proximity to Port of Palm Beach and three international airports</li>
+            <li style="margin-bottom: 0.5rem;">• Growing business community and skilled workforce</li>
+            <li style="margin-bottom: 0.5rem;">• Year-round operational advantages with Florida's climate</li>
+          </ul>
+        </div>
+        
+        <div class="about-cta-box">
+          <h3>Ready to Find Your Space?</h3>
+          <p>Browse our current listings or speak with a representative</p>
+          <a href="tel:+15615560438" class="about-phone">561-556-0438</a>
+          <p class="about-availability">Available to Answer Your Questions</p>
+          
+          <div class="about-features">
+            <p class="about-feature">✓ View Available Properties</p>
+            <p class="about-feature">✓ Schedule Property Tours</p>
+            <p class="about-feature">✓ Get Pricing Information</p>
+            <p class="about-feature">✓ Learn About Lease Terms</p>
+          </div>
+          
+          <a href="#propertyForm" class="submit-button" style="margin-top: 1rem;">
+            Get Started →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h3>INDUSTRIAL<span style="color: var(--teal);">SPACE</span></h3>
+        <p>Your trusted partner for industrial real estate in Palm Beach County</p>
+        
+        <div class="footer-links">
+          <a href="#properties">Properties</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="tel:+15615560438">Contact</a>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 IndustrialSpace. All rights reserved. | 
+            <a href="#" id="terms-toggle" style="color: var(--teal); cursor: pointer;">Terms & Privacy</a>
+          </p>
+          
+          <!-- Terms & Privacy Dropdown -->
+          <div id="terms-dropdown" class="terms-dropdown" style="display: none;">
+            <div class="terms-content">
+              <h4>Terms of Use & Privacy</h4>
+              
+              <div class="terms-section">
+                <h5>Your Privacy Matters</h5>
+                <p>We respect your privacy and are committed to protecting your information. When you submit an inquiry through our forms:</p>
+                <ul>
+                  <li>Your information is used solely to connect you with relevant property owners and managers</li>
+                  <li>We do not sell, share, or distribute your personal data to third parties</li>
+                  <li>Email addresses are used only for property-related communications</li>
+                  <li>You may request removal from our contact list at any time</li>
+                </ul>
+              </div>
+              
+              <div class="terms-section">
+                <h5>Terms of Service</h5>
+                <p>By using this website, you acknowledge that:</p>
+                <ul>
+                  <li>Property information is subject to change and availability</li>
+                  <li>We act as a connection service between prospective tenants and property representatives</li>
+                  <li>Final lease terms and agreements are between you and the property owner/manager</li>
+                  <li>We are not responsible for the accuracy of third-party property listings</li>
+                  <li>This site is for informational purposes to facilitate real estate connections</li>
+                </ul>
+              </div>
+              
+              <div class="terms-section">
+                <h5>Contact & Data Requests</h5>
+                <p>For any questions about your data or to request removal from our systems, please contact us at 561-556-0438 or through our contact form. We're committed to transparency and will respond to all privacy-related requests promptly.</p>
+              </div>
+              
+              <button class="terms-close" onclick="document.getElementById('terms-dropdown').style.display='none'">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CTA -->
+  <a href="tel:+15615560438" class="floating-cta">
+    📞 Call Now
+  </a>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Contact form submission
+    const inquiryForm = document.getElementById('propertyInquiry');
+    if(inquiryForm) {
+      inquiryForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = e.target.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting...';
+
+        const formData = new FormData(inquiryForm);
+
+        try {
+          let response = await fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          });
+
+          if (response.ok) {
+            inquiryForm.innerHTML = `
+              <div style="text-align:center; padding:2rem;">
+                <h3 style="color: var(--teal); margin-bottom:1rem;">✓ Thank You!</h3>
+                <p style="margin-bottom:1.5rem;">We've received your inquiry and will contact you within 24 hours.</p>
+                <p style="font-size:1.2rem; font-weight:700; margin-bottom:1rem;">Want to speak now?</p>
+                <a href="tel:+15615560438" class="submit-button" style="display:inline-block; padding:1rem 2rem;">
+                  📞 Call (561) 556-0438
+                </a>
+              </div>
+            `;
+          } else {
+            alert('Submission failed. Please call (561) 556-0438 directly.');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'GET PROPERTY LIST & SCHEDULE TOUR →';
+          }
+        } catch (err) {
+          alert('Could not submit form. Please call (561) 556-0438 directly.');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'GET PROPERTY LIST & SCHEDULE TOUR →';
+        }
+      });
+    }
+
+    // Newsletter form submission
+    document.querySelectorAll('.newsletter-form').forEach(form => {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Subscribing...';
+        const formData = new FormData(form);
+
+        try {
+          let response = await fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          });
+
+          if (response.ok) {
+            form.innerHTML = `<div style="text-align:center; padding:1.5rem 0;">
+              <strong style="color: var(--teal); font-size:1.2rem;">Thank you for subscribing!</strong><br>
+              Market insights will be delivered to your inbox.
+            </div>`;
+          } else {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Subscribe';
+            alert('Could not subscribe. Please try again or call (561) 556-0438.');
+          }
+        } catch (err) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Subscribe';
+          alert('Could not subscribe. Please try again or call (561) 556-0438.');
+        }
+      });
+    });
+
+    // Phone number formatting
+    const phoneInput = document.getElementById('phone');
+    if(phoneInput) {
+      phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '');
+        let formatted = '';
+        if(value.length > 0) {
+          formatted = '(' + value.substring(0,3);
+        }
+        if(value.length >= 4) {
+          formatted += ') ' + value.substring(3,6);
+        }
+        if(value.length >= 7) {
+          formatted += '-' + value.substring(6,10);
+        }
+        e.target.value = formatted;
+      });
+    }
+
+    // Smooth scroll for internal anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        const href = anchor.getAttribute('href');
+        if (href === '#' || href.startsWith('#blog-')) return;
+
+        const targetID = href.replace('#','');
+        const targetElem = document.getElementById(targetID);
+        if(targetElem) {
+          e.preventDefault();
+          targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Floating CTA hide/show on scroll
+    let lastScrollPos = 0;
+    const floatCTA = document.querySelector('.floating-cta');
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if(currentScroll > 300) {
+        if(currentScroll > lastScrollPos) {
+          floatCTA.style.transform = 'translateY(100px)';
+        } else {
+          floatCTA.style.transform = 'translateY(0)';
+        }
+      }
+      lastScrollPos = currentScroll;
+    });
+
+    // FAQ Accordion
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const question = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+      const icon = item.querySelector('.faq-icon');
+      question.addEventListener('click', () => {
+        const isOpen = answer.style.display === 'block';
+
+        // Close all
+        faqItems.forEach(faq => {
+          faq.querySelector('.faq-answer').style.display = 'none';
+          faq.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+        });
+
+        // Toggle
+        if(!isOpen) {
+          answer.style.display = 'block';
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Blog toggle
+    document.querySelectorAll('.blog-card').forEach(card => {
+      const link = card.querySelector('.blog-link');
+      const closeBtn = card.querySelector('.blog-close');
+      const title = card.querySelector('h3');
+
+      [link, title].forEach(element => {
+        if (element) {
+          element.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            document.querySelectorAll('.blog-card.expanded').forEach(otherCard => {
+              if (otherCard !== card) {
+                otherCard.classList.remove('expanded');
+              }
+            });
+            card.classList.toggle('expanded');
+            if (card.classList.contains('expanded')) {
+              setTimeout(() => {
+                card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }, 100);
+            }
+          });
+        }
+      });
+
+      if (closeBtn) {
+        closeBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          card.classList.remove('expanded');
+        });
+      }
+    });
+
+    <!-- Mobile menu toggle -->
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.createElement('div');
+    mobileMenu.className = 'mobile-menu';
+    mobileMenu.innerHTML = `
+      <div class="mobile-menu-content">
+        <button class="mobile-menu-close">✕</button>
+        <div class="mobile-menu-links">
+          <a href="#properties">Properties</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
+          <a href="tel:+15615560438" class="mobile-menu-phone">📞 Call 561-556-0438</a>
+          <a href="#propertyForm" class="mobile-menu-cta">Get Available Properties</a>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(mobileMenu);
+    
+    if(mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    }
+    
+    const mobileMenuClose = mobileMenu.querySelector('.mobile-menu-close');
+    mobileMenuClose.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Close mobile menu when clicking links
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Animate on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe property/benefit cards
+    document.querySelectorAll('.property-card').forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = `all 0.5s ease ${index * 0.1}s`;
+      observer.observe(card);
+    });
+    document.querySelectorAll('.benefit-card').forEach((card, index) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = `all 0.5s ease ${index * 0.1}s`;
+      observer.observe(card);
+    });
+
+    // Ripple effect
+    document.querySelectorAll('.property-button, .nav-button').forEach(button => {
+      button.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        ripple.classList.add('ripple');
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+
+    // Performance
+    window.addEventListener('load', () => {
+      if ('performance' in window) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log('Page load time:', pageLoadTime + 'ms');
+      }
+    });
+
+    // Availability hover/click
+    function initializeAvailabilityFeatures() {
+      document.querySelectorAll('.availability-badge').forEach(badge => {
+        const originalText = badge.textContent;
+        badge.addEventListener('mouseenter', () => {
+          badge.style.transform = 'scale(1.05)';
+          badge.style.cursor = 'pointer';
+          if (badge.classList.contains('urgent')) {
+            badge.textContent = 'Call to Secure';
+          }
+        });
+        badge.addEventListener('mouseleave', () => {
+          badge.style.transform = 'scale(1)';
+          badge.textContent = originalText;
+        });
+        badge.addEventListener('click', () => {
+          window.location.href = 'tel:+15615560438';
+        });
+      });
+    }
+    initializeAvailabilityFeatures();
+
+    // Terms & Privacy dropdown toggle
+    const termsToggle = document.getElementById('terms-toggle');
+    const termsDropdown = document.getElementById('terms-dropdown');
+    
+    if (termsToggle) {
+      termsToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        termsDropdown.style.display = termsDropdown.style.display === 'none' ? 'block' : 'none';
+      });
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('#terms-dropdown') && !e.target.closest('#terms-toggle')) {
+        if (termsDropdown) termsDropdown.style.display = 'none';
+      }
+    });
+
+    // Basic call tracking
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.addEventListener('click', () => {
+        console.log('Phone call initiated:', link.getAttribute('href'));
+      });
+    });
+  </script>
+</body>
+</html>
