@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Palm Beach Industrial Warehouses - Premium Spaces Available</title>
-  <meta name="description" content="Discover prime industrial warehouse spaces in Palm Beach. From 1,000 to 50,000+ sq ft. Expert guidance, immediate availability. Call (561) 556-0438">
+  <title>South Florida Industrial & Office Spaces - Palm Beach, Fort Lauderdale, Lantana</title>
+  <meta name="description" content="Discover prime industrial, warehouse, and office spaces across South Florida. From 550 to 50,000+ sq ft. Expert guidance, immediate availability. Call (561) 556-0438">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,16 +86,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @keyframes subtlePulse {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      }
-      50% {
-        transform: scale(1.02);
-        box-shadow: 0 3px 15px rgba(49,151,149,0.3);
-      }
-    }
 
     /* --------- HEADER --------- */
     header {
@@ -496,13 +486,13 @@
       position: absolute;
       top: 1rem;
       left: 1rem;
-      background: var(--teal);
+      background: var(--navy);
       color: #fff;
       padding: 0.4rem 0.8rem;
       border-radius: 4px;
       font-weight: 700;
       font-size: 0.88rem;
-      animation: pulse 2s infinite;
+      letter-spacing: 0.5px;
     }
     .availability-badge {
       position: absolute;
@@ -518,25 +508,18 @@
       animation: slideIn 0.5s ease-out;
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      letter-spacing: 0.3px;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+    }
+    .availability-badge:hover {
+      background: var(--teal);
+      transform: scale(1.05);
     }
     .availability-badge::before {
-      content: '✓';
-      font-size: 0.9rem;
-      font-weight: 900;
-      background: rgba(255,255,255,0.2);
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      content: '';
+      display: none;
     }
-    .availability-badge.urgent {
-      background: rgba(49, 151, 149, 0.95);
-      animation: slideIn 0.5s ease-out, subtlePulse 3s infinite;
-    }
+
     .property-details {
       padding: 1.5rem;
     }
@@ -1229,11 +1212,11 @@
     <div class="container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Premium <span class="highlight">Industrial Spaces</span> in Palm Beach County</h1>
-          <p class="hero-subtitle">From startup-friendly units to enterprise warehouses. Expert guidance, immediate availability.</p>
+          <h1>Premium <span class="highlight">Industrial Spaces</span> in South Florida</h1>
+          <p class="hero-subtitle">From professional offices to enterprise warehouses. Palm Beach, Fort Lauderdale & Lantana locations.</p>
           <div class="hero-features">
-            <div class="hero-feature">Spaces from 1,000 - 50,000+ sq ft</div>
-            <div class="hero-feature">Move-in ready facilities</div>
+            <div class="hero-feature">Spaces from 550 - 50,000+ sq ft</div>
+            <div class="hero-feature">Office & warehouse combinations</div>
             <div class="hero-feature">Flexible lease terms</div>
           </div>
         </div>
@@ -1273,10 +1256,12 @@
             <div class="form-group">
               <select id="spaceSize" name="spaceSize" required>
                 <option value="">Select Space Size Needed</option>
+                <option value="550-1000">550 - 1,000 sq ft</option>
                 <option value="1000-2500">1,000 - 2,500 sq ft</option>
                 <option value="2500-5000">2,500 - 5,000 sq ft</option>
                 <option value="5000-10000">5,000 - 10,000 sq ft</option>
-                <option value="10000+">10,000+ sq ft</option>
+                <option value="10000-15000">10,000 - 15,000 sq ft</option>
+                <option value="15000+">15,000+ sq ft</option>
               </select>
             </div>
             
@@ -1295,6 +1280,156 @@
             Immediate response within business hours
           </div>
         </div>
+
+        <!-- Property 4 - Office Suite -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property5.jpg');">
+            <div class="property-badge">OFFICE</div>
+            <div class="availability-badge">✓ Move-In Ready</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Professional Office Suite</h3>
+            <p class="property-location">📍 605 Belvedere Road, Suite 3</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">550 SF</span></div>
+              <div><span class="spec-label">Type:</span> <span class="spec-value">Office</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Monthly Rent:</span> <span class="spec-value">$1,100.00</span></div>
+              <div><span class="spec-label">Rate PSF:</span> <span class="spec-value">$24.00/year</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">Two Private Offices</span>
+              <span class="feature-tag">Separate AC Controls</span>
+              <span class="feature-tag">Abundant Parking</span>
+              <span class="feature-tag">Near I-95</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call Now</a>
+              <a href="#propertyForm" class="property-button secondary">Schedule Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 - Fort Lauderdale -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property6.jpg');">
+            <div class="property-badge">FLEX SPACE</div>
+            <div class="availability-badge">✓ Available Now</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Office/Warehouse Combo</h3>
+            <p class="property-location">📍 813 NW 57th Street, Ft. Lauderdale</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">1,825 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">17'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Monthly Rent:</span> <span class="spec-value">$2,813.54</span></div>
+              <div><span class="spec-label">Rate PSF:</span> <span class="spec-value">$18.50/year</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">700 SF A/C Office</span>
+              <span class="feature-tag">12×12 Grade Door</span>
+              <span class="feature-tag">Light Industrial</span>
+              <span class="feature-tag">Modified Gross</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call Now</a>
+              <a href="#propertyForm" class="property-button secondary">Schedule Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 6 - Military Trail -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property7.jpg');">
+            <div class="property-badge">HIGH VISIBILITY</div>
+            <div class="availability-badge urgent">✓ High Demand</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Flex Warehouse Space</h3>
+            <p class="property-location">📍 S Military Trail, West Palm Beach</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">3,375 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">17'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Monthly Rent:</span> <span class="spec-value">$7,031.25</span></div>
+              <div><span class="spec-label">Rate PSF:</span> <span class="spec-value">$25.00/year</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">750 SF Office</span>
+              <span class="feature-tag">(3) 10×10 Doors</span>
+              <span class="feature-tag">Storefront Entrance</span>
+              <span class="feature-tag">A/C Warehouse</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call Now</a>
+              <a href="#propertyForm" class="property-button secondary">Schedule Tour</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 7 - Lantana -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property8.jpg');">
+            <div class="property-badge">LANTANA PARK</div>
+            <div class="availability-badge">✓ Professional Space</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Commercial Warehouse</h3>
+            <p class="property-location">📍 Lantana Industrial Park</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">2,230 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">18'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Built:</span> <span class="spec-value">1988</span></div>
+              <div><span class="spec-label">Rate:</span> <span class="spec-value">Call for Rates</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">400 SF A/C Office</span>
+              <span class="feature-tag">12×14 Overhead Door</span>
+              <span class="feature-tag">Storefront Entry</span>
+              <span class="feature-tag">Near I-95</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Call for Pricing</a>
+              <a href="#propertyForm" class="property-button secondary">Request Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 8 - Large Industrial -->
+        <div class="property-card">
+          <div class="property-image" style="background-image: url('property9.jpg');">
+            <div class="property-badge">COMING SOON</div>
+            <div class="availability-badge urgent">✓ Aug 2025</div>
+          </div>
+          <div class="property-details">
+            <h3 class="property-title">Large Industrial Complex</h3>
+            <p class="property-location">📍 Lantana Industrial Park, FL 33462</p>
+            <div class="property-specs">
+              <div><span class="spec-label">Size:</span> <span class="spec-value">6,237 SF</span></div>
+              <div><span class="spec-label">Clear Height:</span> <span class="spec-value">24'</span></div>
+            </div>
+            <div class="property-specs">
+              <div><span class="spec-label">Built:</span> <span class="spec-value">1987</span></div>
+              <div><span class="spec-label">Rate:</span> <span class="spec-value">Call for Rates</span></div>
+            </div>
+            <div class="property-features">
+              <span class="feature-tag">1,000 SF Office</span>
+              <span class="feature-tag">3,600 SF A/C Storage</span>
+              <span class="feature-tag">1,637 SF Mezzanine</span>
+              <span class="feature-tag">(2) 12×14 Doors</span>
+            </div>
+            <div class="property-cta">
+              <a href="tel:+15615560438" class="property-button primary">Reserve Now</a>
+              <a href="#propertyForm" class="property-button secondary">Get Details</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -1303,8 +1438,8 @@
   <section class="properties" id="properties">
     <div class="container">
       <div class="section-header">
-        <h2>Featured Industrial Properties</h2>
-        <p>Prime locations with immediate availability</p>
+        <h2>Current Available Properties</h2>
+        <p>9 prime locations across South Florida with immediate to future availability</p>
       </div>
       
       <div class="properties-grid">
@@ -1494,29 +1629,35 @@
         <!-- Blog Card 2 -->
         <div class="blog-card" id="blog-market">
           <span class="blog-category">LOCATION GUIDE</span>
-          <h3>Top 5 Industrial Zones in Palm Beach County</h3>
+          <h3>Top 7 Industrial Zones in South Florida</h3>
           <p class="blog-excerpt">
-            A comprehensive guide to the best industrial areas for logistics, manufacturing, and distribution operations...
+            A comprehensive guide to the best industrial areas for logistics, manufacturing, and distribution operations across Palm Beach and Broward counties...
           </p>
           <p class="blog-meta">January 10, 2025 • 4 min read</p>
           <a href="#" class="blog-link">View Checklist</a>
           
           <div class="blog-full-content">
-            <p>Choosing the right location for your industrial operation can make or break your business efficiency. Here's our expert guide to Palm Beach County's top industrial zones.</p>
+            <p>Choosing the right location for your industrial operation can make or break your business efficiency. Here's our expert guide to South Florida's top industrial zones.</p>
             
             <h3>1. West Palm Beach Industrial District</h3>
-            <p>The largest concentration of industrial space in the county, offering excellent highway access and a skilled workforce. Best for: distribution centers, light manufacturing.</p>
+            <p>The largest concentration of industrial space in Palm Beach County, offering excellent highway access and a skilled workforce. Best for: distribution centers, light manufacturing.</p>
             
-            <h3>2. Boynton Beach Commerce Park</h3>
+            <h3>2. Fort Lauderdale Industrial Corridor</h3>
+            <p>Strategic location with easy access to Port Everglades and Fort Lauderdale-Hollywood International Airport. Best for: import/export operations, logistics companies.</p>
+            
+            <h3>3. Lantana Industrial Park</h3>
+            <p>Well-maintained industrial park with modern facilities and competitive rates. Growing area with available spaces from small to large scale. Best for: growing businesses, warehouse operations.</p>
+            
+            <h3>4. Boynton Beach Commerce Park</h3>
             <p>Modern facilities with flexible zoning. Ideal for businesses needing both warehouse and showroom space. Best for: wholesale operations, flex users.</p>
             
-            <h3>3. Lake Worth Corridor</h3>
+            <h3>5. Lake Worth Corridor</h3>
             <p>Affordable options with good transportation links. Growing area with new developments. Best for: startups, small to medium operations.</p>
             
-            <h3>4. Jupiter Commerce Park</h3>
+            <h3>6. Jupiter Commerce Park</h3>
             <p>Premium location serving northern county. Limited availability but excellent demographics. Best for: high-value goods, specialty operations.</p>
             
-            <h3>5. Boca Raton Industrial Zone</h3>
+            <h3>7. Boca Raton Industrial Zone</h3>
             <p>Tech-friendly area with modern amenities. Higher costs but superior infrastructure. Best for: tech companies, R&D facilities.</p>
             
             <p>Need help choosing the right location? Our team provides free site selection consulting. Call (561) 556-0438 to discuss your requirements.</p>
@@ -1605,11 +1746,11 @@
       <div class="faq-container">
         <div class="faq-item">
           <div class="faq-question">
-            What are the current warehouse rental rates in West Palm Beach?
+            What are the current commercial rental rates in South Florida?
             <span class="faq-icon">▼</span>
           </div>
           <div class="faq-answer">
-            Current warehouse rental rates in West Palm Beach range from $10-16 per square foot annually, depending on location, amenities, and lease terms. Premium locations near major highways command higher rates. Contact us for specific pricing on available properties.
+            Current rental rates vary by location and property type. Office spaces start around $24/SF annually, warehouse rates range from $10-25/SF annually, depending on location, amenities, and lease terms. Fort Lauderdale and Lantana typically offer more competitive rates than central Palm Beach locations. Contact us for specific pricing on available properties.
           </div>
         </div>
         
@@ -1619,7 +1760,7 @@
             <span class="faq-icon">▼</span>
           </div>
           <div class="faq-answer">
-            We have industrial spaces ranging from 1,000 sq ft for small operations up to 50,000+ sq ft for large distribution centers. Many properties offer divisible space, allowing you to lease exactly what you need. We also help businesses plan for future expansion.
+            We have properties ranging from 550 sq ft office suites for professional services up to 50,000+ sq ft for large distribution centers. Many properties offer divisible space, allowing you to lease exactly what you need. We also help businesses plan for future expansion.
           </div>
         </div>
         
@@ -1640,18 +1781,18 @@
   <section class="about-section" id="about">
     <div class="container">
       <div class="section-header">
-        <h2>About Palm Beach Warehouses</h2>
-        <p>Your resource for industrial and warehouse space in Palm Beach County</p>
+        <h2>About South Florida Industrial Spaces</h2>
+        <p>Your resource for industrial, office, and warehouse space in Palm Beach, Broward, and surrounding counties</p>
       </div>
       
       <div class="about-content">
         <div class="about-text">
           <h3>Industrial Real Estate in Palm Beach County</h3>
           <p class="about-lead">
-            Palm Beach Warehouses connects businesses with available industrial, warehouse, and flex spaces throughout Palm Beach County. We provide comprehensive property listings and direct access to property owners and managers.
+            South Florida Industrial Spaces connects businesses with available industrial, warehouse, office, and flex spaces throughout Palm Beach and Broward Counties. We provide comprehensive property listings and direct access to property owners and managers.
           </p>
           
-          <p>Whether you're a small business looking for your first warehouse space or an established company seeking to expand operations, our platform helps you find and compare available properties in key industrial areas including West Palm Beach, Boynton Beach, Lake Worth, and surrounding communities.</p>
+          <p>Whether you're a small business looking for a professional office suite or an established company seeking large-scale warehouse operations, our platform helps you find and compare available properties in key industrial areas including West Palm Beach, Fort Lauderdale, Lantana, Boynton Beach, Lake Worth, and surrounding communities.</p>
           
           <h3>What We Offer</h3>
           <ul style="list-style: none; padding: 0;">
@@ -1661,12 +1802,12 @@
             <li style="margin-bottom: 0.8rem;">✓ <strong>Local Focus:</strong> Exclusively focused on Palm Beach County properties</li>
           </ul>
           
-          <h3>Palm Beach County Industrial Market</h3>
-          <p>Palm Beach County offers diverse industrial real estate options, from small flex spaces perfect for startups to large distribution centers for major operations. The area benefits from:</p>
+          <h3>South Florida Industrial Market</h3>
+          <p>South Florida offers diverse industrial real estate options, from small office suites perfect for professional services to large distribution centers for major operations. The area benefits from:</p>
           <ul style="list-style: none; padding: 0; margin-top: 1rem;">
-            <li style="margin-bottom: 0.5rem;">• Strategic location with access to major highways (I-95, Florida Turnpike)</li>
-            <li style="margin-bottom: 0.5rem;">• Proximity to Port of Palm Beach and three international airports</li>
-            <li style="margin-bottom: 0.5rem;">• Growing business community and skilled workforce</li>
+            <li style="margin-bottom: 0.5rem;">• Strategic location with access to major highways (I-95, Florida Turnpike, I-595)</li>
+            <li style="margin-bottom: 0.5rem;">• Proximity to Port of Palm Beach, Port Everglades, and multiple international airports</li>
+            <li style="margin-bottom: 0.5rem;">• Growing business community and skilled workforce across multiple counties</li>
             <li style="margin-bottom: 0.5rem;">• Year-round operational advantages with Florida's climate</li>
           </ul>
         </div>
@@ -1697,7 +1838,7 @@
     <div class="container">
       <div class="footer-content">
         <h3>INDUSTRIAL<span style="color: var(--teal);">SPACE</span></h3>
-        <p>Your trusted partner for industrial real estate in Palm Beach County</p>
+        <p>Your trusted partner for industrial real estate in South Florida</p>
         
         <div class="footer-links">
           <a href="#properties">Properties</a>
@@ -2040,18 +2181,7 @@
     // Availability hover/click
     function initializeAvailabilityFeatures() {
       document.querySelectorAll('.availability-badge').forEach(badge => {
-        const originalText = badge.textContent;
-        badge.addEventListener('mouseenter', () => {
-          badge.style.transform = 'scale(1.05)';
-          badge.style.cursor = 'pointer';
-          if (badge.classList.contains('urgent')) {
-            badge.textContent = 'Call to Secure';
-          }
-        });
-        badge.addEventListener('mouseleave', () => {
-          badge.style.transform = 'scale(1)';
-          badge.textContent = originalText;
-        });
+        badge.style.cursor = 'pointer';
         badge.addEventListener('click', () => {
           window.location.href = 'tel:+15615560438';
         });
